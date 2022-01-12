@@ -45,7 +45,9 @@ function adicionar() {
         list.appendChild(item)
         res.innerHTML = '' // esvazia o resultado depois de inserir novo numero
 
-    } else {
+  } else if(num.value.length == 0 ){
+        window.alert('Inserir um valor')
+    }else{
         window.alert('Valor ínvalido ou já inserido. ')
     }
 
